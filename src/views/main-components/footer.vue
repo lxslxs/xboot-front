@@ -1,24 +1,7 @@
 <template>
   <div class="foot">
-    <Row type="flex" justify="space-around" class="foot-item">
-      <a
-        class="item"
-        href="https://www.kancloud.cn/exrick/xboot/1009234"
-        target="_blank"
-        >{{ $t("docs") }}</a
-      >
-      <a class="item" href="https://github.com/Exrick/x-boot" target="_blank">
-        <Icon custom="iconfont icon-github" size="16" />
-      </a>
-      <a class="item" href="http://xpay.exrick.cn/pay?xboot" target="_blank">{{
-        $t("fullVersion")
-      }}</a>
-    </Row>
     <Row type="flex" justify="center" class="copyright">
-      Copyright © 2018 - Present
-      <a href="http://exrick.cn" target="_blank" style="margin: 0 5px"
-        >Exrick</a
-      >
+      Copyright © 2018-2022
       {{ $t("rights") }}
     </Row>
   </div>

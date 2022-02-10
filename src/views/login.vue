@@ -11,12 +11,12 @@
         <div>
           <Header />
           <div>
-            <Tabs v-model="tabName">
+            <!--<Tabs v-model="tabName">
               <TabPane
                 :label="$t('usernameLogin')"
                 name="username"
                 icon="md-person"
-              >
+              >-->
                 <Form
                   ref="usernameLoginForm"
                   :model="form"
@@ -74,8 +74,8 @@
                     </Row>
                   </FormItem>
                 </Form>
-              </TabPane>
-              <TabPane
+<!--              </TabPane>-->
+              <!--<TabPane
                 :label="$t('mobileLogin')"
                 name="mobile"
                 icon="ios-phone-portrait"
@@ -118,7 +118,7 @@
                     </Row>
                   </FormItem>
                 </Form>
-              </TabPane>
+              </TabPane>-->
             </Tabs>
 
             <Row type="flex" justify="space-between" align="middle">
@@ -150,7 +150,7 @@
                 <span v-else>{{ $t("logining") }}</span>
               </Button>
             </Row>
-            <Row type="flex" justify="space-between" class="other-login">
+            <!--<Row type="flex" justify="space-between" class="other-login">
               <div class="other-way icons">
                 {{ $t("otherLogin") }}
                 <div class="other-icon" @click="toGithubLogin">
@@ -202,7 +202,7 @@
               <router-link to="/regist">
                 <a class="forget-pass">{{ $t("regist") }}</a>
               </router-link>
-            </Row>
+            </Row>-->
           </div>
         </div>
         <Footer />
@@ -242,8 +242,8 @@ export default {
       sending: false,
       errorCode: "",
       form: {
-        username: "admin、test、test2（支持邮箱/手机登录）",
-        password: "123456",
+        username: "",
+        password: "",
         mobile: "",
         code: "",
       },
